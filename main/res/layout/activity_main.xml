@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/button_output"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:background="@color/black"
+        android:gravity="bottom|right"
+        android:text="请输入计算结果"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <!-- b7b3b3 btn -->
+
+    <!-- Minus Button -->
+
+    <Button
+        android:id="@+id/minus_btn"
+        android:layout_width="102dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="3dp"
+        android:background="@drawable/btn_b7b3b3"
+        android:text="-"
+        android:onClick="button_click"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/plus_btn"
+        app:layout_constraintTop_toBottomOf="@+id/button_output"
+        tools:ignore="HardcodedText" />
+
+    <!-- Clear Button -->
+    <Button
+        android:id="@+id/clear_btn"
+        android:layout_width="102dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_b7b3b3"
+        android:text="C"
+        android:onClick="button_click"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_output"
+        tools:ignore="HardcodedText" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="102dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_b7b3b3"
+        android:text="←"
+        android:onClick="button_click"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/clear_btn"
+        app:layout_constraintTop_toBottomOf="@+id/button_output"
+        tools:ignore="HardcodedText" />
+
+    <!-- Plus Button -->
+    <Button
+        android:id="@+id/plus_btn"
+        android:layout_width="102dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_b7b3b3"
+        android:onClick="button_click"
+        android:text="+"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/back_btn"
+        app:layout_constraintTop_toBottomOf="@+id/button_output"
+        tools:ignore="HardcodedText" />
+
+    <!-- f5a22d btn -->
+    <Button
+        android:id="@+id/equal_btn"
+        android:layout_width="102dp"
+        android:layout_height="105dp"
+        android:background="@drawable/btn_f5a22d"
+        android:text="="
+        android:onClick="button_click"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/dot2_btn"
+        app:layout_constraintTop_toBottomOf="@+id/dot_btn"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/times_btn"
+        android:layout_width="102dp"
+        android:layout_height="107.5dp"
+        android:layout_marginStart="3dp"
+        android:background="@drawable/btn_f5a22d"
+        android:text="x"
+        android:onClick="button_click"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/nine_btn"
+        app:layout_constraintTop_toBottomOf="@+id/minus_btn"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/divide_btn"
+        android:layout_width="102dp"
+        android:layout_height="107.5dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/btn_f5a22d"
+        android:text="/"
+        android:onClick="button_click"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/six_btn"
+        app:layout_constraintTop_toBottomOf="@+id/times_btn"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/dot_btn"
+        android:layout_width="102dp"
+        android:layout_height="107.5dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/btn_f5a22d"
+        android:text="."
+        android:onClick="button_click"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/three_btn"
+        app:layout_constraintTop_toBottomOf="@+id/divide_btn"
+        tools:ignore="HardcodedText,DuplicateSpeakableTextCheck" />
+
+    <!-- eaeaea btn -->
+
+    <Button
+        android:id="@+id/eight_btn"
+        android:layout_width="102dp"
+        android:layout_height="107.5dp"
+        android:background="@drawable/btn_eaeaea"
+        android:text="8"
+        android:onClick="button_click"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/seven_btn"
+        app:layout_constraintTop_toBottomOf="@+id/back_btn"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/seven_btn"
+        android:layout_width="102dp"
+        android:layout_height="107.5dp"
+        android:background="@drawable/btn_eaeaea"
+        android:text="7"
+        android:onClick="button_click"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clear_btn"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/nine_btn"
+        android:layout_width="102dp"
+        android:layout_height="107.5dp"
+        android:background="@drawable/btn_eaeaea"
+        android:text="9"
+        android:onClick="button_click"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/eight_btn"
+        app:layout_constraintTop_toBottomOf="@+id/plus_btn"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/six_btn"
+        android:layout_width="102dp"
+        android:layout_height="107.5dp"
+        android:background="@drawable/btn_eaeaea"
+        android:text="6"
+        android:onClick="button_click"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/five_btn"
+        app:layout_constraintTop_toBottomOf="@+id/nine_btn"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/five_btn"
+        android:layout_width="102dp"
+        android:layout_height="107.5dp"
+        android:background="@drawable/btn_eaeaea"
+        android:text="5"
+        android:onClick="button_click"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/four_btn"
+        app:layout_constraintTop_toBottomOf="@+id/eight_btn"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/one_btn"
+        android:layout_width="102dp"
+        android:layout_height="107.5dp"
+        android:background="@drawable/btn_eaeaea"
+        android:onClick="button_click"
+        android:text="1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/four_btn"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/dot2_btn"
+        android:layout_width="102dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/btn_eaeaea"
+        android:text="."
+        android:textSize="20sp"
+        android:onClick="button_click"
+        app:layout_constraintStart_toEndOf="@+id/zero_btn"
+        app:layout_constraintTop_toBottomOf="@+id/three_btn"
+        tools:ignore="HardcodedText,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/zero_btn"
+        android:layout_width="204dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/btn_eaeaea"
+        android:onClick="button_click"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/one_btn"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/two_btn"
+        android:layout_width="102dp"
+        android:layout_height="107.5dp"
+        android:background="@drawable/btn_eaeaea"
+        android:text="2"
+        android:textSize="20sp"
+        android:onClick="button_click"
+        app:layout_constraintStart_toEndOf="@+id/one_btn"
+        app:layout_constraintTop_toBottomOf="@+id/five_btn"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/three_btn"
+        android:layout_width="102dp"
+        android:layout_height="107.5dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/btn_eaeaea"
+        android:text="3"
+        android:onClick="button_click"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/two_btn"
+        app:layout_constraintTop_toBottomOf="@+id/six_btn"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/four_btn"
+        android:layout_width="102dp"
+        android:layout_height="107.5dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/btn_eaeaea"
+        android:text="4"
+        android:onClick="button_click"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seven_btn"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
